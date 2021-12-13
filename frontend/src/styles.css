@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+header, body {
+  background: #051D3B;
+}
+
+.container .menu-titulo {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  color: #FFFFFF;
+}
+
+/* Header */
+
+.cabecalhoPrincipal .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 32px 40px 32px;
+}
+
+/* Header - Buscador */
+
+.cabecalhoPrincipal-buscar {
+  flex-grow: 1;
+  max-width: 752px;
+  margin: 0 40px;
+  height: 56px;
+  padding: 16px 14px;
+  border: 0px;
+  border-radius: 8px;
+  
+  background: #FFFFFF16;
+  color: #FFFFFF;
+}
+
+.cabecalhoPrincipal-buscar::placeholder {
+  color: #FFFFFF64;
+}
+
+.cabecalhoPrincipal-buscar:hover {
+  background: #FFFFFF24;
+}
+
+.cabecalhoPrincipal-buscar:focus {
+  outline: none;
+}
+
+/* Header - Perfil */
+
+.cabecalhoPrincipal-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  max-width: 106px;
+}
+
+.cabecalhoPrincipal-perfil:hover {
+  background: #FFFFFF08;
+  border-radius: 8px;
+}
+
+.cabecalhoPrincipal-perfil-foto {
+  height: 32px;
+  border-radius: 15px;
+}
+
+.cabecalhoPrincipal-perfil-nome {
+  padding-left: 8px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Main */
+
+.conteudoPrincipal .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px 40px 32px;
+}
+
+/* Menu */
+
+.conteudoPricipal-menu-titulo {
+  padding-bottom: 16px;
+}
+
+.conteudoPrincipal-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 189px;
+}
+
+.conteudoPrincipal-menu-link a{
+  display: flex;
+  align-items: center;
+  color: #FFFFFF56;
+  text-decoration: none;
+   padding: 16px 0 16px 0;
+}
+
+.conteudoPrincipal-menu-link a:hover{
+  color: #FFFFFF72;
+}
+
+.conteudoPrincipal-menu .active a:hover{
+  cursor: context-menu;
+}
+
+.conteudoPrincipal-menu-link img {
+  padding: 16px 14px;
+  border-radius: 16px;
+  background: #5081FB16;
+}
+
+.conteudoPrincipal-menu-link img:hover {
+  background: #5081FB64;
+}
+
+.conteudoPrincipal-menu .active img {
+  background: #5081FB;
+}
+
+.conteudoPrincipal-menu-link h2 {
+  padding-left: 16px;
+  font-weight: normal;
+}
+
+.conteudoPrincipal-menu .active h2 {
+  color: #FFFFFF;
+}
+
+/* Editor de codigo */
+
+.editorCodigo {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorCodigo .editorCodigo-bg {
+  flex-grow: 1;
+  max-width: 752px;
+  height: 366px;
+  border: 32px solid #6BD1FF;
+  border-radius: 8px;
+}
+
+.editorCodigo .editorCodigo-window {
+  display: flex;
+
+  
+}
+
+/* Editor de codigo - botões flutuantes */
+
+.editorCodigo-window-btn {
+  display: flex;
+}
+
+.editorCodigo-window-btn .visual-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 16px;
+}
+
+.visual-btn:nth-child(1) {
+  background: #FF5F56;
+}
+
+.visual-btn:nth-child(2) {
+  background: #FF5F56;
+}
+
+.visual-btn:nth-child(3) {
+  background: #FF5F56;
+}
+
+/* Formulario - Seu Projeto*/
+
+.formularioProjeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.formularioProjeto .formularioProjeto-sobre, .formularioProjeto .formularioProjeto-linguagem {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  
+  /* Header */
+
+
+
+  /* Main */
+
+
+
+  /* Footer */
+
+
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  
+  /* Header */
+
+
+
+  /* Main */
+
+
+
+  /* Footer */
+
+
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AluraDEV</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Inter Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecalhoPrincipal">
+    <section class="container">
+      <img class="cabecalhoPrincipal-logo" src="../../asset/Logo.png" alt="logo AluraDEV">
+
+      <input class="cabecalhoPrincipal-buscar" type="search" placeholder="Busque por algo">
+      
+      <div class="cabecalhoPrincipal-perfil">
+        <img class="cabecalhoPrincipal-perfil-foto" src="../../img/Renato.png" alt="foto de perfil">
+        <a class="cabecalhoPrincipal-perfil-nome" href="#">Renato</a>
+      </div>
+    </section>
+  </header>
+  <main class="conteudoPrincipal">
+    <section class="container">
+
+      <!-- Navegador Desktop Lateral Direita-->
+
+      <nav>
+        <ul class="conteudoPrincipal-menu">
+          <li class="conteudoPricipal-menu-titulo menu-titulo">Menu</li>
+          <li class="conteudoPrincipal-menu-link active">
+            <a href="index.html"><img src="../../asset/Editor-codigo.png" alt=""><h2>Editor de código</h2></a>
+          </li>
+          <li class="conteudoPrincipal-menu-link">
+            <a href="#"><img src="../../asset/Comunidade.png" alt=""><h2>Comunidade</h2></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Editor de Codigo -->
+
+      <div class="editorCodigo">
+        <div class="editorCodigo-bg">
+          <div class="editorCodigo-window">
+            <div class="editorCodigo-window-btn">
+              <div class="visual-btn btn1"></div>
+              <div class="visual-btn btn2"></div>
+              <div class="visual-btn btn3"></div>
+            </div>
+            
+            <textarea class="editorCodigo--" name="" id="" cols="30" rows="10"></textarea>
+          </div>            
+        </div>
+
+        <button class="editorCodigo-highlight type="button">Visualizar com o hightlight</button>
+      </div>
+
+      <!-- Formulario -->
+
+      <form class="formularioProjeto">
+        <fieldset class="formularioProjeto-sobre">
+          <legend class="menu-titulo">Seu projeto</legend>
+          <input class="formularioProjeto-sobre-nome" type="text" name="nome-projeto" id="nome-projeto" placeholder="Nome do seu projeto">
+          <input class="formularioProjeto-sobre-descricao" type="text" name="descricao-projeto" id="descricao-projeto" placeholder="Descrição do seu projeto">
+        </fieldset>
+        
+        <fieldset class="formularioProjeto-linguagem">
+          <legend class="menu-titulo">Personalização</legend>
+          <select name="" id="">
+            <option value="">JavaScript</option>
+            <option value="">CSS</option>
+            <option value="">HTML</option>
+          </select>
+          
+          <input class="formularioProjeto-" type="color" name="selectColor" id="selectColor">
+        </fieldset>
+
+        <input class="formularioProjeto-submit" type="submit" value="">
+      </form>
+
+    </section>
+  </main>
+</body>
+</html>
