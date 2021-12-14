@@ -25,6 +25,13 @@ header, body {
   padding: 32px 32px 40px 32px;
 }
 
+/* Header - Logo AluraDEV */
+
+.cabecalhoPrincipal-logo {
+  flex-grow: 1;
+  max-width: 189px;
+}
+
 /* Header - Buscador */
 
 .cabecalhoPrincipal-buscar {
@@ -53,6 +60,13 @@ header, body {
 }
 
 /* Header - Perfil */
+
+.cabecalhoPrincipal-control {
+  display: flex;
+  flex-grow: 1;
+  max-width: 272px;
+  justify-content: right;
+}
 
 .cabecalhoPrincipal-perfil {
   display: flex;
@@ -104,7 +118,7 @@ header, body {
   align-items: center;
   color: #FFFFFF56;
   text-decoration: none;
-   padding: 16px 0 16px 0;
+  padding: 0 0 16px 0;
 }
 
 .conteudoPrincipal-menu-link a:hover{
@@ -143,44 +157,87 @@ header, body {
 .editorCodigo {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  max-width: 752px;
+  margin: 0 40px;
 }
 
 .editorCodigo .editorCodigo-bg {
-  flex-grow: 1;
-  max-width: 752px;
-  height: 366px;
+  display: flex;
+  background: #6BD1FF;
   border: 32px solid #6BD1FF;
   border-radius: 8px;
 }
 
-.editorCodigo .editorCodigo-window {
+.editorCodigo-window {
   display: flex;
-
-  
+  flex-direction: column;
+  flex-grow: 1;
+  background: #141414;
+  border-radius: 8px;
+  padding: 16px;
+  height: 302px;
 }
+
 
 /* Editor de codigo - botões flutuantes */
 
 .editorCodigo-window-btn {
   display: flex;
+  padding-bottom: 24px;
 }
 
 .editorCodigo-window-btn .visual-btn {
   width: 12px;
   height: 12px;
   border-radius: 16px;
+  margin-right: 8px;
 }
 
-.visual-btn:nth-child(1) {
-  background: #FF5F56;
+.visual-btn:nth-child(1) {background: #FF5F56}
+
+.visual-btn:nth-child(2) {background: #FFBD2E}
+
+.visual-btn:nth-child(3) {background: #27C93F}
+
+/* Editor de codigo - Codigo */
+
+.editorCodigo-window-text {
+  flex-grow: 1;
+  background: #141414;
+  color: #FFFFFF;
+  font-size: 14px;
+  border: 0px;
+  resize: none;
 }
 
-.visual-btn:nth-child(2) {
-  background: #FF5F56;
+.editorCodigo-window-text:focus {
+  outline: none;
 }
 
-.visual-btn:nth-child(3) {
-  background: #FF5F56;
+/* Editor de codigo - Codigo */
+
+.editorCodigo-highlight {
+  margin-top: 32px;
+  height: 56px;
+  background: #5081FB08;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s background;
+}
+
+.editorCodigo-highlight:hover {
+  background: #5081FB16;
+}
+
+.editorCodigo-highlight:active {
+  border: 4px solid #5081FB24;
+}
+
+.editorCodigo-highlight:focus {
+  background: #5081FB24;
 }
 
 /* Formulario - Seu Projeto*/
@@ -188,19 +245,100 @@ header, body {
 .formularioProjeto {
   display: flex;
   flex-direction: column;
+  width: 272px;
 }
 
 .formularioProjeto .formularioProjeto-sobre, .formularioProjeto .formularioProjeto-linguagem {
   display: flex;
   flex-direction: column;
+  border: 0px;
 }
 
+/* Formulario - Padronização */
+
+input[type=text] {
+  background: #FFFFFF16;
+  border: 0px;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+input[type=text]:hover {
+  background: #FFFFFF24;
+}
+
+.formularioProjeto-linguagem-select:hover {
+  background: #FFFFFF24;
+}
+
+/* Formulario - Sobre */
+
+.formularioProjeto-sobre .formularioProjeto-sobre-descricao {
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.formularioProjeto-sobre-nome, .formularioProjeto-sobre-descricao {
+  padding: 0px 14px;
+  height: 56px;
+  margin-top: 16px;
+}
+
+/* Formulario - Personalização */
+
+.formularioProjeto-linguagem-select {
+  background: #FFFFFF16;
+  border: 0px;
+  border-radius: 8px;
+  color: #FFFFFF64;
+  
+}
+
+.formularioProjeto-color {
+  width: 272px;
+  border: 1px solid #C4C4C4;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 32px;
+  background: #051D3B;
+}
+
+.formularioProjeto-linguagem-select, .formularioProjeto-color {
+  height: 56px;
+  margin-top: 16px;
+}
+
+/* Formulario - Submit */
+
+.formularioProjeto-submit {
+  height: 56px;
+  background: #5081FB;
+  color: #051D3B;
+  border: 0px;
+  border-radius: 8px;
+}
+
+.formularioProjeto-submit:hover {
+  background: #7BA4FC;
+}
+
+.formularioProjeto-submit:active {
+  border: 4px solid #5081FB72;
+  background: #7BA4FC;
+}
+
+.formularioProjeto-submit:focus {
+  background: #96B9FD;
+}
 /* Tablet */
 
 @media screen and (max-width: 768px) {
   
   /* Header */
 
+  .cabecalhoPrincipal-logo {
+    max-width: 145px;
+  }
 
 
   /* Main */

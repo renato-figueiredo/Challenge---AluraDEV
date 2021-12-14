@@ -14,13 +14,17 @@
 <body>
   <header class="cabecalhoPrincipal">
     <section class="container">
-      <img class="cabecalhoPrincipal-logo" src="../../asset/Logo.png" alt="logo AluraDEV">
+      <div class="cabecalhoPrincipal-logo">
+        <img  src="../../asset/Logo.png" alt="logo AluraDEV">
+      </div>
 
       <input class="cabecalhoPrincipal-buscar" type="search" placeholder="Busque por algo">
       
-      <div class="cabecalhoPrincipal-perfil">
-        <img class="cabecalhoPrincipal-perfil-foto" src="../../img/Renato.png" alt="foto de perfil">
-        <a class="cabecalhoPrincipal-perfil-nome" href="#">Renato</a>
+      <div class="cabecalhoPrincipal-control">
+        <div class="cabecalhoPrincipal-perfil">
+          <img class="cabecalhoPrincipal-perfil-foto" src="../../img/Renato.png" alt="foto de perfil">
+          <a class="cabecalhoPrincipal-perfil-nome" href="#">Renato</a>
+        </div>
       </div>
     </section>
   </header>
@@ -52,11 +56,11 @@
               <div class="visual-btn btn3"></div>
             </div>
             
-            <textarea class="editorCodigo--" name="" id="" cols="30" rows="10"></textarea>
+            <textarea class="editorCodigo-window-text" type="text" name="" id=""></textarea>
           </div>            
         </div>
 
-        <button class="editorCodigo-highlight type="button">Visualizar com o hightlight</button>
+        <button class="editorCodigo-highlight" type="button">Visualizar com o hightlight</button>
       </div>
 
       <!-- Formulario -->
@@ -70,16 +74,16 @@
         
         <fieldset class="formularioProjeto-linguagem">
           <legend class="menu-titulo">Personalização</legend>
-          <select name="" id="">
+          <select class="formularioProjeto-linguagem-select" name="" id="">
             <option value="">JavaScript</option>
             <option value="">CSS</option>
             <option value="">HTML</option>
           </select>
           
-          <input class="formularioProjeto-" type="color" name="selectColor" id="selectColor">
+          <input class="formularioProjeto-color" type="color" name="selectColor" id="selectColor" value="#6BD1FF">
         </fieldset>
 
-        <input class="formularioProjeto-submit" type="submit" value="">
+        <input class="formularioProjeto-submit" type="submit" value="Salvar Projeto">
       </form>
 
     </section>
